@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1;
+    color: #333;
+}
+
+header {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dish {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    display: inline-table;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+}
+
+.dish img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish h3 {
+    margin: 0.5em 0;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer .footer-section {
+    margin-bottom: 1em;
+}
+
+footer .footer-section h4 {
+    margin-bottom: 0.5em;
+}
+
+footer .footer-section p,
+footer .footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-section a:hover {
+    color: #ff69b4;
+}
+
+footer .social-media button {
+    background-color: white;
+    border: none;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .social-media button:hover {
+    background-color: #ff69b4;
+}
